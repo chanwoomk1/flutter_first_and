@@ -1,0 +1,39 @@
+# Flutter 관련 빌드 파일 및 캐시 폴더
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+
+# iOS 관련 불필요한 파일
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/.generated/
+
+# Android 관련 불필요한 파일
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# VSCode 설정 파일
+.vscode/
+
+# Xcode 관련 파일
+*.xcworkspace
+*.xcodeproj/
+*.xcassets
+Pods/
+Podfile.lock
+
+# 환경 변수 파일
+.env
+
+# 기타 시스템 파일
+.DS_Store
+*.log
+
+
+Android/
