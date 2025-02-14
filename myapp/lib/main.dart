@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import "package:myapp/mainscreen.dart";
+import "package:myapp/layout/appbar.dart";
+import "package:myapp/layout/navigationbar/navigationbar.dart";
+import "package:myapp/screen/mainscreen.dart";
 
 //flutter run -d web-server --web-hostname=0.0.0.0
 
@@ -18,7 +20,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MainScreen(),
+      home: const Scaffold(
+        extendBody: true, // 본문 내용이 FAB 아래로 확장되도록 설정
+        appBar: MyAppBar(),
+        body: MainScreen(),
+        bottomNavigationBar : MyNavigationBar()
+
+      )
     );
   }
 }
