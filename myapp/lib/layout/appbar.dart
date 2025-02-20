@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/modal/add_task.dart';
+import 'package:myapp/modal/modalbutton.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MyAppBar({super.key});
@@ -16,7 +16,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
               context: context,
               builder: (context) => SizedBox(
                 height: 250,
-                child: AddTask(),
               ),
             );
           },
