@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ModalButton extends StatelessWidget {
-  final Widget ModalScreen;
+  final Widget modalScreen;
   final VoidCallback? closedButtonFunction;
 
-  const ModalButton({super.key,required this.ModalScreen, this.closedButtonFunction});
+  const ModalButton({super.key,required this.modalScreen, this.closedButtonFunction});
 
   void _showModal(BuildContext context){
     showDialog(
@@ -13,7 +13,7 @@ class ModalButton extends StatelessWidget {
         return Dialog(
           child: Column(
             children: [
-              ModalScreen,
+              modalScreen,
               ElevatedButton(
                 onPressed: (){
                   Navigator.of(context).pop();

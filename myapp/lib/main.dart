@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const Scaffold(
         extendBody: true, // 본문 내용이 FAB 아래로 확장되도록 설정
-        appBar: MyAppBar(),
+    
         body: MainScreen(),
 
       )
